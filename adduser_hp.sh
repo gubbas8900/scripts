@@ -1,22 +1,21 @@
 #!/usr/bin/ksh 
-#new comment
-N[0]="SEARS_Business_User";	    I[0]="ddotts"
-N[1]="SEARS_Business_User";	    I[1]="smireck"
-#N[1]="Sandeep Dubey";                  I[1]="sdubey"
-#N[2]="Balasubramanyam Venkata Vogoti"; I[2]="bvenkat"
-#N[3]="Reshmi Ramachandaran";           I[3]="rramac02"
-#N[4]="Leo Thangaraj";                  I[4]="lthanga"
-#N[5]="Rohan Vaidya";                   I[5]="rvaidy1"
-#N[6]="Murthy Avadhanula";              I[6]="mavadha"
-#N[7]="Mandadapu Prabhakara";           I[7]="mprabha"
-#N[8]="Kanthimathi Santhikumar";        I[8]="ksanthi"
+N[0]="Business_User";	    I[0]="ddotts"
+N[1]="Business_User";	    I[1]="smireck"
+#N[2]="name";                  I[1]="userid"
+#N[3]="name";                  I[1]="userid"
+#N[4]="name";                  I[1]="userid"
+#N[5]="name";                  I[1]="userid"
+#N[6]="name";                  I[1]="userid"
+#N[7]="name";                  I[1]="userid"
+#N[8]="name";                  I[1]="userid"
+
 
 PACMAN="05094120"
 HOME="/home"                       # Sometime its "/home1"
 PGRP="simiuser"
 GRPS="simiuser,staff"
 PROFILE=""                         # Copy this .profile
-SA_EMAIL="jcarlin@searshc.com"
+SA_EMAIL="jcarlin@somecompany.com"
 REMOVE_HOME_DIR="0"                # Normally set to "0" 
 
 # Start from here:
@@ -73,7 +72,7 @@ Message_User () {
    sub_PASS="$4"
 
         sendmail -t << EOF
-TO: ${sub_USER}@searshc.com
+TO: ${sub_USER}@somecompany.com
 BCC: ${SA_EMAIL}
 Subject: System Access to ${sub_HOST}
 
